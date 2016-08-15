@@ -30,7 +30,7 @@
     "react-dom": "^0.14.0 || ^15.0.0"
   },
   "dependencies": {
-    "nprogress": "^0.2.0"
+    "nprogress": "github:boelensman1/nprogress"
   },
   "devDependencies": {
     "babel-cli": "^6.6.5",

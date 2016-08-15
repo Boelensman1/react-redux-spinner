@@ -20485,8 +20485,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (parent != document.body) {
 	      addClass(parent, 'nprogress-custom-parent');
 	    }
-
-	    parent.appendChild(progress);
+	    if (parent) {
+	      parent.appendChild(progress);
+	    }
 	    return progress;
 	  };
 
@@ -20669,6 +20670,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	   */
 
 	  function addClass(element, name) {
+	    if (!element) {
+	      return;
+	    }
 	    var oldList = classList(element),
 	        newList = oldList + name;
 
